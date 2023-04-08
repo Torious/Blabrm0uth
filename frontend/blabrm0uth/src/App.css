@@ -1,0 +1,29 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  white-space: pre-wrap;
+}
+

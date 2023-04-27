@@ -30,8 +30,6 @@
 ##### Frontend: React
 ##### CSS: Custom CSS
 
-##### Contributing
-
 
 ## Setup
 

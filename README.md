@@ -10,7 +10,6 @@
 ##### Generate full captions for a YouTube video
 ##### Generate a summary of a YouTube video
 ##### Ask a question about a YouTube video and get an answer
-##### Responsive design that adjusts to different screen sizes
 
 
 ## Usage

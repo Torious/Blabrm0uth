@@ -5,10 +5,11 @@ from rest_framework import status
 from youtube_transcript_api import YouTubeTranscriptApi
 import re
 import requests
+import os
 import json
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-# Copy the get_captions_from_video_link function and its dependencies here
+from decouple import config
 
 class CaptionAPIView(APIView):
     def post(self, request, *args, **kwargs):
@@ -92,11 +93,12 @@ def get_captions_from_video_link(video_link):
         return None
 
 def call_chatgpt(prompt):
+    API_KEY = config('API_KEY')
     url = "https://api.openai.com/v1/chat/completions"
 
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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",
+        "Authorization": f"Bearer {API_KEY}",
     }
 
     data = {

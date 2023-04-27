@@ -1,7 +1,8 @@
 // src/App.js
 import React, { useState } from "react";
 import "./App.css";
-import blabrm0uth_nobg from "./blabrm0uth-nobg.png";
+import blabrm0uth from "./blabrm0uth.png";
+import 'font-awesome/css/font-awesome.min.css';
 
 function App() {
   const [videoLink, setVideoLink] = useState("");
@@ -97,10 +98,34 @@ function App() {
     }
   };
 
+  const handleDone = () => {
+    setCaptions(null);
+    setOption("full_captions");
+    setVideoLink("");
+    setQuestion("");
+    setNumWords("");
+    setShowResults(false);
+  };
+
+  const handleRegenerate = () => {
+    setLoading(true);
+    fetchCaptions();
+  };
+
+  const handleEdit = () => {
+    setCaptions(null);
+    setShowResults(false);
+  };
+
   return (
     <div className="body">
+      <nav className="navbar">
+        <a href="https://github.com/Torious/Blabrm0uth" target="_blank" rel="noopener noreferrer">
+          <i className="fa fa-github" aria-hidden="true"></i>
+        </a>
+      </nav>
       <div className="App">
-        <img src={blabrm0uth_nobg} alt="blabrm0uth" />
+        <img src={blabrm0uth} alt="blabrm0uth" />
 
         {!showResults && (
           <>
@@ -109,13 +134,13 @@ function App() {
                 className={`tab ${option === "full_captions" ? "selected" : ""}`}
                 onClick={() => setOption("full_captions")}
               >
-                Full Captions
+                Captions
               </button>
               <button
                 className={`tab ${option === "summarize" ? "selected" : ""}`}
                 onClick={() => setOption("summarize")}
               >
-                Summarize
+                Summary
               </button>
               <button
                 className={`tab ${option === "question" ? "selected" : ""}`}
@@ -139,7 +164,7 @@ function App() {
                 className="inputx"
                 value={numWords}
                 onChange={(e) => setNumWords(e.target.value)}
-                placeholder="Number of words"
+                placeholder="Enter summary size"
               />
             )}
             {option === "question" && (
@@ -148,7 +173,7 @@ function App() {
                 className="inputx"
                 value={question}
                 onChange={(e) => setQuestion(e.target.value)}
-                placeholder="Question about the video"
+                placeholder="Ask a question about the video"
               />
             )}
             {loading ? (
@@ -159,10 +184,21 @@ function App() {
           </>
         )}
 
-        {captions && (
-          <div className="caption-container">
-            <p>{captions}</p>
-          </div>
+        {captions && showResults && (
+          <>
+            <div className="caption-container">
+              <p>{captions}</p>
+            </div>
+            {loading ? (
+              <div className="spinner" />
+            ) : (
+              <div className="tab-container">
+                <button onClick={handleDone}>Done</button>
+                <button onClick={handleRegenerate}>Regenerate</button>
+                <button onClick={handleEdit}>Edit</button>
+              </div>
+            )}
+          </>
         )}
         {error && <p className="error-message">{error}</p>}
       </div>

@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Blabrm0uth
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+##### Blabrm0uth is a web application that generates captions, summaries, and answers questions about YouTube videos using a Django backend and a React frontend.
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##### Generate full captions for a YouTube video
+##### Generate a summary of a YouTube video
+##### Ask a question about a YouTube video and get an answer
+##### Responsive design that adjusts to different screen sizes
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### Enter a YouTube video link in the input field.
+##### Select the desired action: Captions, Summary, or Question.
+##### If Summary is selected, enter the desired summary size.
+##### If Question is selected, type your question about the video.
+##### Click "Submit" to generate the captions, summary, or answer.
+##### After the result is displayed, use the "Done", "Regenerate", or "Edit" buttons to navigate between different states.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##### Backend: Django
+##### Frontend: React
+##### CSS: Custom CSS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Setup
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##### Python 3.8 or higher
+##### Node.js 14 or higher
+##### npm 6 or higher
+##### openAI API KEY
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Installation
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Clone the repository:
 
-### Making a Progressive Web App
+##### git clone https://github.com/Torious/Blabrm0uth.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Change into the project directory:
 
-### Advanced Configuration
+##### cd backend/blabrm0uth
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Create a Python virtual environment and activate it:
 
-### Deployment
+##### python -m venv venv
+##### source venv/bin/activate (Linux/Mac)
+##### venv\Scripts\activate (Windows)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### Install the backend dependencies:
 
-### `npm run build` fails to minify
+##### pip install -r requirements.txt
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Create your .env file inside the backend/blabrm0uth directory and setup your openAI API KEY:
+
+##### API_KEY = your_api_keyopenAI API KEY
+
+#### Start the Django backend server:
+
+##### python manage.py runserver
+
+#### Open a new terminal and change into the frontend directory:
+
+##### cd frontend
+
+#### Install the frontend dependencies:
+
+##### npm install
+
+#### Start the React development server:
+
+##### npm start
+
+#### The application should now be running at http://localhost:3000/.
+
+##### If you want to contribute to this project, please create a fork of the repository and submit a pull request.
+
+### License
+##### This project is licensed under the MIT License.

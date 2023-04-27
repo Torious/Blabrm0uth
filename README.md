@@ -73,7 +73,7 @@
 
 #### Open a new terminal and change into the frontend directory:
 
-##### cd frontend
+##### cd frontend/blabrm0uth
 
 #### Install the frontend dependencies:
 

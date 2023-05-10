@@ -87,13 +87,3 @@
 #### The application should now be running at http://localhost:3000/.
 
 ##### If you want to contribute to this project, please create a fork of the repository and submit a pull request.
-
-<<<<<<< HEAD
-=======
-### License
-
-
-##### This project is licensed under the MIT License.
-
-
->>>>>>> 0f5ddc260cfd3b96e883d12bd86c422811aade4c

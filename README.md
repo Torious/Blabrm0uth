@@ -10,7 +10,6 @@
 ##### Generate full captions for a YouTube video
 ##### Generate a summary of a YouTube video
 ##### Ask a question about a YouTube video and get an answer
-##### Responsive design that adjusts to different screen sizes
 
 
 ## Usage
@@ -31,10 +30,9 @@
 ##### Frontend: React
 ##### CSS: Custom CSS
 
-##### Contributing
-
 
 ## Setup
+
 
 ### Prerequisites
 
@@ -76,7 +74,7 @@
 
 #### Open a new terminal and change into the frontend directory:
 
-##### cd frontend
+##### cd frontend/blabrm0uth
 
 #### Install the frontend dependencies:
 
@@ -90,3 +88,12 @@
 
 ##### If you want to contribute to this project, please create a fork of the repository and submit a pull request.
 
+<<<<<<< HEAD
+=======
+### License
+
+
+##### This project is licensed under the MIT License.
+
+
+>>>>>>> 0f5ddc260cfd3b96e883d12bd86c422811aade4c

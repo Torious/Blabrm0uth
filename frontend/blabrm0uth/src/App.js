@@ -134,7 +134,7 @@ function App() {
                 className={`tab ${option === "full_captions" ? "selected" : ""}`}
                 onClick={() => setOption("full_captions")}
               >
-                Captions
+                Transcript
               </button>
               <button
                 className={`tab ${option === "summarize" ? "selected" : ""}`}

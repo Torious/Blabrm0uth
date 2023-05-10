@@ -68,7 +68,7 @@
 
 #### Create your .env file inside the backend/blabrm0uth directory and setup your openAI API KEY:
 
-##### API_KEY = your_api_keyopenAI API KEY
+##### API_KEY = your_api_key
 
 #### Start the Django backend server:
 
@@ -90,5 +90,3 @@
 
 ##### If you want to contribute to this project, please create a fork of the repository and submit a pull request.
 
-### License
-##### This project is licensed under the MIT License.

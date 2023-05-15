@@ -1,0 +1,7 @@
+{
+    "root": "frontend/blabrm0uth/build/",
+    "routes": {
+      "/**": "index.html"
+    }
+  }
+  

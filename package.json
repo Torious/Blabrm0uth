@@ -1,0 +1,17 @@
+{
+    "name": "blabrm0uth",
+    "version": "1.0.0",
+    "description": "A React and Django application",
+    "main": "index.js",
+    "engines": {
+      "node": "14.x",
+      "npm": "6.x"
+    },
+    "scripts": {
+      "start": "cd frontend/blabrm0uth && npm start",
+      "heroku-postbuild": "cd frontend/blabrm0uth && npm install --only=dev && npm install && npm run build"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+  }
+  

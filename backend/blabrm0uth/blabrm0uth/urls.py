@@ -20,6 +20,7 @@ from .views import CaptionAPIView, SummarizeAPIView, QuestionAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
     path('captions/', CaptionAPIView.as_view(), name='captions'),
     path('summarize/', SummarizeAPIView.as_view(), name='summarize'),
     path('question/', QuestionAPIView.as_view(), name='question'),

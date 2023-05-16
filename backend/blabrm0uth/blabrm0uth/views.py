@@ -10,7 +10,13 @@ import json
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from decouple import config
+from django.http import HttpResponse
+from django.template import loader
 
+def index(request):
+    template = loader.get_template('index.html')
+    return HttpResponse(template.render({}, request))
+    
 class CaptionAPIView(APIView):
     def post(self, request, *args, **kwargs):
         video_link = request.data.get('video_link')

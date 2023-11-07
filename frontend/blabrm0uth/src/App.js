@@ -16,7 +16,7 @@ function App() {
 
   const fetchFullCaptions = async () => {
     try {
-      const response = await fetch("http://localhost:8000/captions/", {
+      const response = await fetch("https://blabrm0uth.herokuapp.com/captions/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ function App() {
 
   const fetchSummarizedCaptions = async () => {
     try {
-      const response = await fetch("http://localhost:8000/summarize/", {
+      const response = await fetch("https://blabrm0uth.herokuapp.com/summarize/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -64,7 +64,7 @@ function App() {
 
   const fetchQuestion = async () => {
     try {
-      const response = await fetch("http://localhost:8000/question/", {
+      const response = await fetch("https://blabrm0uth.herokuapp.com/question/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

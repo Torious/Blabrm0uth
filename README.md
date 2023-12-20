@@ -52,13 +52,17 @@
 
 #### Change into the project directory:
 
-##### cd backend/blabrm0uth
+##### cd backend
 
 #### Create a Python virtual environment and activate it:
 
 ##### python -m venv venv
 ##### source venv/bin/activate (Linux/Mac)
 ##### venv\Scripts\activate (Windows)
+
+#### Change into the project directory again:
+
+##### cd blabrm0uth
 
 #### Install the backend dependencies:
 

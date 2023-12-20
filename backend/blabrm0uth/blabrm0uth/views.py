@@ -125,3 +125,4 @@ def call_chatgpt(prompt):
         return generated_text
     except requests.exceptions.RequestException as e:
         raise Exception(f"Error calling ChatGPT API: {str(e)}")
+        

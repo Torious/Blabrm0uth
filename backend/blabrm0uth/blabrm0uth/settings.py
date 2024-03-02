@@ -34,7 +34,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['blabrm0uth.com', 'www.blabrm0uth.com', 'blabrm0uth.herokuapp.com', 'www.blabrm0uth.herokuapp.com', 'https://blabrm0uth.herokuapp.com', 'localhost', '127.0.0.1']
 
